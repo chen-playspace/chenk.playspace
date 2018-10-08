@@ -1,0 +1,60 @@
+<%= link_to "My Profile", users_path %>
+
+
+<div id="flex-quote" class="flex-quote">
+  <div id="quote-container" class="quote-container">
+
+  </div>
+</div>
+
+<div id="flex-author" class="flex-author">
+  <div id="author-container" class="author-container">~<i id="quote-author"></i></div>
+</div>
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+  var q0 = "My proceeds from the PayPal acquisition were $180 million. I put $100 million in SpaceX, $70m in Tesla, and $10m in Solar City. I had to borrow money for rent." 
+  var q1 = "In fact what I would like to see is thousands of computer scientists let loose to do whatever they want. That's what really advances the field."
+  var q2 = "Talent without working hard is nothing."
+  var q3 = "Help young people. Help small guys. Because small guys will be big. Young people will have the seeds you bury in their minds, and when they grow up, they will change the world."
+  var q4 = "A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well."
+  var q5 = "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it."
+  var q6 = "How to teach people to do what hasn't been done is a great riddle."
+  var q7 = "It's fine to celebrate success but it is more important to heed the lessons of failure."
+  var q8 = "Don't be a prisoner of your own style."
+  var q9 = "Live well with uncertainty."
+
+  var a0 = "Elon Musk"
+  var a1 = "Donald Knuth"
+  var a2 = "Cristiano Ronaldo"
+  var a3 = "Jack Ma"
+  var a4 = "Jeff Bezos"
+  var a5 = "Steve Jobs"
+  var a6 = "Peter Thiel"
+  var a7 = "Bill Gates"
+  var a8 = "Armin Van Buuren"
+  var a9 = "Oprah Winfrey"
+
+
+
+  var quote_array = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q9]
+  var author_array = [a0, a1, a2, a3, a4, a5, a6, a7, a8, a9]
+
+
+  function generate_quote(){
+    var quote_container = document.getElementById("quote-container")
+    var quote_author = document.getElementById("quote-author")
+
+    var rand_num = Math.round(Math.random()*9)
+
+    quote_container.innerHTML = quote_array[rand_num]
+    quote_author.innerHTML = author_array[rand_num]
+  }
+
+  generate_quote()
+
+</script>

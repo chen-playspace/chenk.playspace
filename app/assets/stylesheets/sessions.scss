@@ -1,0 +1,432 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Width______________________________________________________________________________
+.main-game-container{
+  width:28vw;
+}
+
+.quote-and-author-container{
+  width:50vw;
+}
+
+
+//Height_____________________________________________________________________________
+.main-game-container{
+  height: 28vw;
+}
+
+
+//Font Size__________________________________________________________________________
+.box{
+  font-size:7vw;
+}
+
+.quote-and-author-container{
+  font-size:1vw;
+}
+
+.message-display-container{
+  font-size: 1.5vw;
+}
+
+.back-to-profile-button{
+  font-size: 1vw;
+}
+
+
+//TicTacToe Styling__________________________________________________________________
+.main-game-container{
+  border:3px solid rgb(153,0,207);
+  border-radius: 10px;
+}
+
+.flexbox-gamebox{
+  // border:1px solid red;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rounds-display{
+  // border:1px solid red;
+  text-align: center;
+}
+
+.first-row{
+  /*border:1px solid rgb(75,168,168);*/
+  height:33%;
+  width:100%;
+  display:flex;
+  justify-content:center;  
+}
+
+.second-row{
+  /*border:1px solid rgb(75,168,168);*/
+  border-top:3px solid rgb(153,0,207);
+  border-bottom:3px solid rgb(153,0,207);
+  height:33%;
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+.third-row{
+  /*border:1px solid rgb(75,168,168);*/
+  height:33%;
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+.box{
+  /*border:1px solid red;*/
+  height:100%;
+  width:100%;
+  text-align: center;
+}
+
+.zero, .three, .six, .one, .four, .seven{
+  border-right:3px solid rgb(153,0,207);
+}
+
+#message-display-container{
+  text-align: center;
+  display:none;
+  margin:0;
+}
+  
+#thinking-dot-one{
+  display:none;
+}
+
+#thinking-dot-two{
+  display:none;
+}
+
+#thinking-dot-three{
+  display:none;
+}
+
+#thinking-dot-four{
+  display:none;
+}
+
+#thinking-dot-five{
+  display:none;
+}
+
+
+//Quote Styling_______________________________________________________________________
+.flex-quote-container{
+  // border:1px solid red;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-top:39px;
+  margin-bottom: 100px;
+}
+
+.quote-and-author-container{
+  // border:1px solid green;
+  color:gray;
+  font-style: italic;
+}
+
+.quote-of-the-day{
+  color:black;
+}
+
+.quote{
+  // border:1px solid blue;
+  margin-bottom: 3px;
+  margin-left:10px;
+}
+
+.author{
+  // border:1px solid blue;
+  text-align: right;
+}
+
+
+
+
+
+
+//_MEDIA QUERY FOR DESKTOP(Small Screen)_________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 1200px){
+  //Width______________________________________________________________________________
+  .main-game-container{
+    width:33.9vw;
+  }
+
+  .quote-and-author-container{
+    width:60vw;
+  }
+
+
+  //Height_____________________________________________________________________________
+  .main-game-container{
+    height: 33.9vw;
+  }
+
+
+  //Font Size__________________________________________________________________________
+  .box{
+    font-size:8.5vw;
+  }
+
+  .quote-and-author-container{
+    font-size:1.2vw;
+  }
+  
+  .message-display-container{
+  font-size: 1.8vw;
+  }
+
+  .back-to-profile-button{
+    font-size: 1.2vw;
+  }
+
+}
+
+
+
+
+
+
+//_MEDIA QUERY FOR DESKTOP(Very Small Screen)_________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 900px){
+  //Width______________________________________________________________________________
+  .main-game-container{
+    width:43vw;
+  }
+
+  .quote-and-author-container{
+    width:65vw;
+  }
+
+
+  //Height_____________________________________________________________________________
+  .main-game-container{
+    height:43vw;
+  }
+
+
+  //Font Size__________________________________________________________________________
+  .box{
+    font-size:11vw;
+  }
+
+  .quote-and-author-container{
+    font-size:1.5vw;
+  }
+
+  .message-display-container{
+  font-size: 2.2vw;
+  }
+
+  .back-to-profile-button{
+    font-size: 1.5vw;
+  }  
+}
+
+
+
+
+
+
+//_MEDIA QUERY FOR TABLET________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 768px){
+  //Width______________________________________________________________________________
+  .main-game-container{
+    width:47vw;
+  }
+
+  .quote-and-author-container{
+    width:65vw;
+  }
+
+
+  //Height_____________________________________________________________________________
+  .main-game-container{
+    height:47vw;
+  }
+
+
+  //Font Size__________________________________________________________________________
+  .box{
+    font-size:12vw;
+  }
+
+  .quote-and-author-container{
+    font-size:1.75vw;
+  }
+
+  .back-to-profile-button{
+    font-size: 1.6vw;
+  }  
+
+
+  //Flex Quote container margin bottom on tablet/mobile view___________________________
+  .flex-quote-container{
+    margin-bottom: 145px;
+  }
+  .message-display-container{
+  font-size: 2.6vw;
+  }  
+}
+
+
+
+
+
+
+//_MEDIA QUERY FOR TABLET________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 600px){
+  //Width______________________________________________________________________________
+  .main-game-container{
+    width:52vw;
+  }
+
+  .quote-and-author-container{
+    width:65vw;
+  }
+
+
+  //Height_____________________________________________________________________________
+  .main-game-container{
+    height:52vw;
+  }
+
+
+  //Font Size__________________________________________________________________________
+  .box{
+    font-size:13.5vw;
+  }
+
+  .quote-and-author-container{
+    font-size:2vw;
+  }
+
+  .back-to-profile-button{
+    font-size: 1.93vw;
+  }  
+
+
+  //Flex Quote container margin bottom on tablet/mobile view___________________________
+  .flex-quote-container{
+    margin-bottom: 145px;
+  }
+
+  .message-display-container{
+  font-size: 2.8vw;
+  }    
+}
+
+
+
+
+
+
+//_MEDIA QUERY FOR TABLET________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 480px){
+  //Width______________________________________________________________________________
+  .main-game-container{
+    width:55vw;
+  }
+
+  .quote-and-author-container{
+    width:65vw;
+  }
+
+
+  //Height_____________________________________________________________________________
+  .main-game-container{
+    height:55vw;
+  }
+
+
+  //Font Size__________________________________________________________________________
+  .box{
+    font-size:14.5vw;
+  }
+
+  .quote-and-author-container{
+    font-size:2.45vw;
+  }
+
+  .back-to-profile-button{
+    font-size: 2.35vw;
+  }  
+
+
+  //Flex Quote container margin bottom on tablet/mobile view___________________________
+  .flex-quote-container{
+    margin-bottom: 145px;
+  }
+
+  .message-display-container{
+  font-size: 3.35vw;
+  }    
+}
+
+
+
+
+
+
+//_MEDIA QUERY FOR TABLET________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 400px){
+  //Width______________________________________________________________________________
+  .main-game-container{
+    width:60vw;
+  }
+
+  .quote-and-author-container{
+    width:65vw;
+  }
+
+
+  //Height_____________________________________________________________________________
+  .main-game-container{
+    height:60vw;
+  }
+
+
+  //Font Size__________________________________________________________________________
+  .box{
+    font-size:16vw;
+  }
+
+  .quote-and-author-container{
+    font-size:3vw;
+  }
+
+  .back-to-profile-button{
+    font-size: 2.8vw;
+  }  
+
+
+  //Flex Quote container margin bottom on tablet/mobile view___________________________
+  .flex-quote-container{
+    margin-bottom: 145px;
+  }
+
+  .message-display-container{
+  font-size: 3.55vw;
+  }     
+}
+

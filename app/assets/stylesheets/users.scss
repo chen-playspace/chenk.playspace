@@ -1,0 +1,747 @@
+//MEDIA QUERY FOR DESKTOP [DEFAULT]
+
+#container{   // ID #container IS MAIN CONTAINER IN RAILS(wrapped inside <body> tag - will follow screen size)
+  // border:2px solid gray;
+  padding:3px;
+  width:100%;
+  margin:0 auto;
+  font-family:Arial;                //Everything in resume uses Arial font
+  overflow-wrap: break-word;        //Property to prevent words from overflow out of the container when it is too long
+  word-wrap: break-word;            //Property to prevent words from overflow out of the container when it is too long
+}
+
+//MARGIN TOP________________________________________________________________________________________________________________
+.content-header, .sub-header, .sub-header-field{
+  margin-top: 2.5vw;
+}
+
+.finance-and-it-field, .language,{
+  margin-top: 1vw; 
+}
+
+.flex-game-button{
+  margin-top: 1.2vw;  
+}
+
+.line-seperating-bio-and-content{
+  margin-top:5px;  
+}
+
+.skills-child{
+  margin-top:0.25vw;
+}
+
+.interest-parent{
+  margin-top: 2vw;
+}
+
+.quote-container, .author-container{
+  margin-top: 50px;
+}
+
+
+//FONT SIZE_________________________________________________________________________________________________________________
+.name, .contact-header{
+  font-size:2vw;                                                                         
+}
+
+.cpa, .content-header-design, .content-header-word{
+  font-size:1.5vw;
+}
+
+.objective, .location-contact, .sub-header-design, .sub-header-word, .description, .industry-specialisation,
+.sub-header-field, .skills-parent, .quote-container, .author-container, .game-button, .contact-link{
+  font-size: 1.05vw;
+}
+
+// SIGNUP AND LOGIN CONRAINER_______________________________________________________________________________________________
+.signup-login-container{
+  // border:1px solid red;
+  width:100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+// BIO CONTAINER____________________________________________________________________________________________________________
+.bio-container{
+  // border:1px solid red;
+  width:100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.name-cpa-objective{
+  // border:1px solid blue;
+  width:34%
+}
+
+.name{
+}
+
+.cpa{
+  margin-bottom: 13px;
+  color: gray;
+  font-weight: bold;
+}
+
+.objective{
+}
+
+//Image__________________________
+.profileimage-location-contact{
+  width:66%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image-container{
+  // border:1px solid blue;
+  width:50%;
+  display: flex;
+  justify-content: center;
+
+  position:relative;                            //To ensure image follow size of .profile-image-container
+  overflow:hidden;                              //To ensure image follow size of .profile-image-container
+}
+
+.myimage{
+  display: block;                               //To ensure image follow size of .profile-image-container
+  position:absolute;                            //To ensure image follow size of .profile-image-container
+  top:50%;                                      //To ensure image follow size of .profile-image-container
+  left:50%;                                     //To ensure image follow size of .profile-image-container
+  max-width: 100%;                              //To ensure image follow size of .profile-image-container
+  max-height: 100%;                             //To ensure image follow size of .profile-image-container
+  transform: translate(-50%, -50%);             //To ensure image follow size of .profile-image-container
+}
+
+//Contact & Location_____________
+
+.location-contact-container{
+  // border:1px solid blue;
+  width:50%;
+  min-height: 80px;
+  // display: flex;
+  // justify-content:center;
+}
+
+.contact-header{
+  // border:1px solid red;
+  height:45%;
+  text-align: center;
+}
+
+.contact-link{
+  text-align: center;
+}
+
+
+// LINE SEPERATING BIO AND CONTENT__________________________________________________________________________________________
+.line-seperating-bio-and-content{
+  border:1px solid rgb(153,0,207);
+  width:100%;
+  margin-bottom:5px;
+}
+
+//RESUME CONTENT CONTAINER___________________________________________________________________________________________________
+.resume-content-container{
+  // border:1px solid red;
+  width:100%;
+
+  display: flex;
+  justify-content: space-between; 
+}
+
+.first-page-left{
+  // border:1px solid blue;
+  width:48%;
+}
+
+.first-page-right{
+  // border:1px solid blue;
+  width:48%;
+}
+
+.content-header{
+  border-bottom: 1px solid rgb(153,0,207);
+  width:100%;
+  display:flex;
+}
+
+.content-header-design{
+  // border:1px solid red;
+  color: rgb(153,0,207);
+  font-weight: bold;
+}
+
+.content-header-word{
+  // border:1px solid red;
+  margin-left: 1vw;
+  color: gray;
+  font-weight: bold;
+}
+
+.sub-header{  
+  display:flex; 
+}
+
+.sub-header-design{
+  // border:1px solid red;
+  margin-left: 2.3vw;
+  color: rgb(153,0,207);
+  font-weight: bold;
+}
+
+.sub-header-word{
+  // border:1px solid red;
+  margin-left: 1vw;
+}
+
+.description{
+  padding:0;                      // Remove default padding of <ul> element. To ensure alignment standardisation on screen scaling 
+  margin-left:6vw;
+}
+
+.industry-specialisation{
+  margin-left: 6vw;
+}
+
+.sub-header-field{ 
+  margin-left: 2.3vw;   
+  color: gray;
+  font-weight: bold;
+}
+
+// Skills & competencies_____
+.skills-parent{
+  // border: 1px solid green;
+  margin-left: 6vw;
+  display:flex;
+  flex-wrap:wrap;   
+}
+
+.skills-child{
+  // border:1px solid purple;
+  background-color:rgba(106,2,134,0.9);
+  color:white; 
+  border-radius:5px;
+  padding:1px 1.5px 1px 1.5px;
+  margin-left:0.25vw;
+}
+
+.language{
+  margin-left: 6vw;
+}
+
+
+// Interests___________
+.interest-parent{
+  margin-left: 3.9vw;
+}
+
+.interest-child{
+  min-width: 7vw;
+  text-align: center;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+//Game Button_____________________________________________________________________________________________________________
+
+.flex-game-button{
+  // border: 1px solid red;
+  display:flex;
+  justify-content:flex-start;
+  font-family:Arial; 
+}
+
+.game-button{
+  border:1.5px solid black;
+  border-radius:6px;
+  background-color: yellow;
+  text-decoration: none;
+  text-align: center;
+  color:black;
+  margin-left: 2.8vw;
+  padding:2px 10px 2px 10px;
+  transition:all 1s;
+}
+
+.game-button:hover{
+  transition:all 1.35s;
+  border:1px solid black;
+  padding: 3px 43px 3px 43px;
+  background-color: rgb(81,109,146);
+  font-weight: normal;
+  color: white;
+}
+
+
+//Quote Page______________________________________________________________________________________________________________
+.flex-quote, .flex-author{
+  // border:1px solid red;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quote-container, .author-container{
+  // border:1px solid blue;
+  width:30vw;
+  margin-right: 6vw;
+}
+
+.author-container{
+  text-align: right;
+}
+
+
+
+
+
+
+//_MEDIA QUERY FOR DESKTOP(Small Screen)_________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 1200px){
+  //MARGIN TOP________________________________________________________________________________________________________________
+  .content-header, .sub-header, .sub-header-field{
+    margin-top: 2.5vw;
+  }
+
+  .finance-and-it-field, .language, .flex-game-button{
+    margin-top: 1vw; 
+  }
+
+  .line-seperating-bio-and-content{
+    margin-top:5px;  
+  }
+
+  .skills-child{
+    margin-top:0.25vw;
+  }
+
+  .interest-parent{
+    margin-top: 2vw;
+  }
+
+  .quote-container, .author-container{
+    margin-top: 50px;
+  }
+
+
+  //FONT SIZE_________________________________________________________________________________________________________________
+  .name, .contact-header{
+    font-size:2.2vw;                                                                         
+  }
+
+  .cpa, .content-header-design, .content-header-word{
+    font-size:1.5vw;
+  }
+
+  .objective, .location-contact, .sub-header-design, .sub-header-word, .description, .industry-specialisation,
+  .sub-header-field, .skills-parent, .quote-container, .author-container, .game-button, .contact-link{
+    font-size: 1.3vw;
+  }
+}
+
+
+
+
+
+
+//_MEDIA QUERY FOR DESKTOP(Very Small Screen)_________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 900px){
+  //MARGIN TOP________________________________________________________________________________________________________________
+  .content-header, .sub-header, .sub-header-field{
+    margin-top: 2.5vw;
+  }
+
+  .finance-and-it-field, .language, .flex-game-button{
+    margin-top: 1vw; 
+  }
+
+  .line-seperating-bio-and-content{
+    margin-top:5px;  
+  }
+
+  .skills-child{
+    margin-top:0.25vw;
+  }
+
+  .interest-parent{
+    margin-top: 2vw;
+  }
+
+  .quote-container, .author-container{
+    margin-top: 50px;
+  }
+
+  //FONT SIZE_________________________________________________________________________________________________________________
+  .name, .contact-header{
+    font-size:2.5vw;                                                                         
+  }
+
+  .cpa, .content-header-design, .content-header-word{
+    font-size:1.7vw;
+  }
+
+  .objective, .location-contact, .sub-header-design, .sub-header-word, .description, .industry-specialisation,
+  .sub-header-field, .skills-parent, .quote-container, .author-container, .game-button, .contact-link{
+    font-size: 1.6vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+//_MEDIA QUERY FOR TABLET________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 768px){
+
+  //MARGIN TOP________________________________________________________________________________________________________________
+  .content-header, .sub-header{
+    margin-top: 5vw;
+  }
+
+  .line-seperating-bio-and-content{
+    margin-top:5px;
+  }
+
+  .sub-header-field{
+    margin-top: 5vw;
+  }
+
+  .quote-container, .author-container{
+    margin-top: 50px;
+  }
+
+  .flex-game-button{
+    margin-top: 2vw;  
+  }
+
+  // FONT SIZES___________________________________________________________________________________________________
+  .name, .contact-header{
+    font-size:3.6vw;
+  }
+
+  .cpa{
+    font-size:3vw;   
+  } 
+
+  .content-header-design, .content-header-word{
+    font-size:2.7vw;    
+  }
+
+  .objective,.location-contact{
+    font-size: 2vw;
+  }
+
+  .objective, .location-contact, .sub-header-design, .sub-header-word, .description, .industry-specialisation,
+  .sub-header-field, .skills-parent, .quote-container, .author-container, .game-button, .contact-link{
+    font-size: 2vw;
+  }
+
+  .game-button{
+    font-size:1.9vw;
+  }
+
+  // BIO CONTAINER____________________________________________________________________________________________________
+  .bio-container{
+    // border:1px solid red;
+    width:100%;
+
+    display: block;
+  }
+
+  .name-cpa-objective{
+    // border:1px solid blue;
+    width:100%;
+    margin-bottom: 10px;
+  }
+
+  .name{
+    width:100%;
+    text-align: center;
+  }
+
+  .cpa{
+    width:100%;
+    text-align: center;   
+  }
+
+  .objective{
+    width:100%;
+    text-align: center;  
+    font-style: italic; 
+  }
+
+  .profileimage-location-contact{
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .location-contact-container{
+    border-left:0.1px solid rgb(153,0,207);
+    text-align: center; 
+  }
+
+  // LINE SEPERATING BIO AND CONTENT__________________________________________________________________________________________
+  .line-seperating-bio-and-content{
+    border:1px solid rgb(153,0,207);
+    width:100%;                                
+    margin-bottom:5px;
+    display:none;
+  }
+
+  //RESUME CONTENT CONTAINER______________________________________________________________________________________________
+  .resume-content-container{
+    // border:1px solid red;
+    width:100%;
+    display: block;
+  }
+
+  .first-page-left{
+    // border:1px solid blue;
+    width:100%;
+  }
+
+  .first-page-right{
+    // border:1px solid blue;
+    width:100%;
+  }
+
+  .content-header{
+    border-bottom: 1px solid rgb(153,0,207);
+    width:100%;
+    display:flex;
+  }
+
+  .content-header-design{
+    // border:1px solid red;
+    color: rgb(153,0,207);
+    font-weight: bold;
+  }
+
+  .content-header-word{
+    // border:1px solid red;
+    margin-left: 1vw;
+    color: gray;
+    font-weight: bold;
+  }
+
+  .sub-header{
+    display:flex; 
+  }
+
+  .sub-header-design{
+    // border:1px solid red;
+    margin-left: 2.3vw;
+    color: rgb(153,0,207);
+    font-weight: bold;
+  }
+
+  .sub-header-word{
+    // border:1px solid red;
+    margin-left: 1vw;
+  }
+
+  .sub-header-field{  
+    margin-left: 2.3vw;   
+    color: gray;
+    font-weight: bold;  
+  }
+
+  //Game Button____________________________________________________________________________________________________________
+  .flex-game-button{
+    // justify-content:center;
+  }
+
+  .game-button{
+    border:1.5px solid black;
+    border-radius:6px;
+    background-color: yellow;
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    margin-left: 3.9vw;
+    padding:1.5px 32px 1.5px 32px;
+    // transition:all 1s;
+  }
+
+  // QUOTE_________________________________________________________________________________________________________________
+  .flex-quote, .flex-author{
+    // border:1px solid red;
+    display: flex;
+    justify-content:center;
+  }  
+
+  .quote-container, .author-container{
+    // border:1px solid blue;
+    width:70%;
+    margin-right: 6vw;
+  }
+}
+
+
+
+
+
+
+//_MEDIA QUERY FOR TABLET________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 600px){
+
+  // FONT SIZES___________________________________________________________________________________________________
+  .name, .contact-header{
+    font-size:4.5vw;
+  }
+
+  .cpa{
+    font-size:3.8vw;   
+  } 
+
+  .content-header-design, .content-header-word{
+    font-size:3.2vw;    
+  }
+
+  .objective,.location-contact{
+    font-size: 2.5vw;
+  }
+
+  .objective, .location-contact, .sub-header-design, .sub-header-word, .description, .industry-specialisation,
+  .sub-header-field, .skills-parent, .quote-container, .author-container, .contact-link {
+    font-size: 2.3vw;
+  }
+
+  .game-button{
+    font-size:2.3vw;
+  }
+
+  // QUOTE_________________________________________________________________________________________________________________
+  .flex-quote, .flex-author{
+    // border:1px solid red;
+    display: flex;
+    justify-content:center;
+  }  
+
+  .quote-container, .author-container{
+    // border:1px solid blue;
+    width:70%;
+    margin-right: 6vw;
+  }
+}
+
+
+
+//_MEDIA QUERY FOR TABLET________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 480px){
+
+  // FONT SIZES___________________________________________________________________________________________________
+  .name, .contact-header{
+    font-size:4.5vw;
+  }
+
+  .cpa{
+    font-size:3.9vw;   
+  } 
+
+  .content-header-design, .content-header-word{
+    font-size:3.2vw;    
+  }
+
+  .objective,.location-contact{
+    font-size: 2.5vw;
+  }
+
+  .objective, .location-contact, .sub-header-design, .sub-header-word, .description, .industry-specialisation,
+  .sub-header-field, .skills-parent, .quote-container, .author-container, .contact-link{
+    font-size: 2.8vw;
+  }
+
+  .game-button{
+    font-size:2.7vw;
+  }
+
+  // QUOTE_________________________________________________________________________________________________________________
+  .flex-quote, .flex-author{
+    // border:1px solid red;
+    display: flex;
+    justify-content:center;
+  }  
+
+  .quote-container, .author-container{
+    // border:1px solid blue;
+    width:70%;
+    margin-right: 6vw;
+  }
+}
+
+
+
+
+//_MEDIA QUERY FOR TABLET________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________
+@media(max-width: 400px){
+
+  // FONT SIZES___________________________________________________________________________________________________
+  .name, .contact-header{
+    font-size:5vw;
+  }
+
+  .cpa{
+    font-size:3.9vw;   
+  } 
+
+  .content-header-design, .content-header-word{
+    font-size:3.5vw;    
+  }
+
+  .objective,.location-contact{
+    font-size: 3vw;
+  }
+
+  .objective, .location-contact, .sub-header-design, .sub-header-word, .description, .industry-specialisation,
+  .sub-header-field, .skills-parent, .quote-container, .author-container, .contact-link{
+    font-size: 3.3vw;
+  }
+
+  .game-button{
+    font-size:3.1vw;
+  }
+
+  // QUOTE_________________________________________________________________________________________________________________
+  .flex-quote, .flex-author{
+    // border:1px solid red;
+    display: flex;
+    justify-content:center;
+  }  
+
+  .quote-container, .author-container{
+    // border:1px solid blue;
+    width:70%;
+    margin-right: 6vw;
+  }
+}
+
+
+
+
+
+
+

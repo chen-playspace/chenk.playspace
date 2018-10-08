@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chenk</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <meta name="viewport" content="width=device-width">
+  </head>
+
+  <body>
+    
+    <div id="container">
+
+      <div class="signup-login-container">
+        <%#= link_to "Home", home_path %>                                   
+
+        <div id="user_header">
+          <%if current_user %>                                                              <!--Note 1--> 
+            Logged in as <%= current_user.email%>
+            <%#= link_to "Log Out", logout_path(current_user), method: "delete" %>          <!--Note 2-->
+          <%else%>
+            <%#= link_to "Sign Up", signup_path %>                                                      
+            <%#= link_to "Log In", login_path %>
+          <%end%>
+        </div>
+
+        <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, id:"flash_#{name}" %>
+        <%end%>
+      </div>
+  
+      <%= yield %>
+    </div>
+
+  </body>
+</html>
+
+
+
+
+
+
+<!--
+Note 1: 
+If current_user exist. Which mean logged in is True.
+
+
+Note 2: 
+This note applies before we use our self written path for Signup/Login/Logout
+
+session_path(current_user) - the current_user in the parenthesis will pass in the current user id. 
+This is required because, as can be seen from rails routes, session_path for delete method have parameter id in the url, so we need to pass in the id. 
+
+We also need to specify method:"delete" because session_path have 4 methods (GET, PUT, PATCH, DELETE). So we need to explicitly specify method:"delete" to execute destroy function in the sessions controller
+
+-->

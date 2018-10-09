@@ -1,6 +1,7 @@
 <!-- <div> <%#= link_to "Go back to Profile Page", users_path, class:"back-to-profile-button"%> -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript">
-  reload_game()  
+  reload_game();
 </script>
 
 <div id="flex-quote-container" class="flex-quote-container">
@@ -119,23 +120,23 @@
 // Tic-Tac-Toe__________________________________________________________________________________________
 
     //Variables
-    let whose_turn = "human";
-    let game_array = new Array(9);
-    let human_score = 0;
-    let ai_score = 0;
-    let game_rounds = 0;
-    let current_empty_position;
-    let game_result;
-    const game_box = document.getElementsByClassName("box")
-    let first_moved_position = "no move";
-    let second_moved_position = "no move";
-    let third_moved_position = "no move";
-    let fourth_moved_position = "no move";
-    let fifth_moved_position = "no move";
-    let sixth_moved_position = "no move";
-    let seventh_moved_position = "no move";
-    let eight_moved_position = "no move";
-    let ninth_moved_position = "no move";
+    var whose_turn = "human";
+    var game_array = new Array(9);
+    var human_score = 0;
+    var ai_score = 0;
+    var game_rounds = 0;
+    var current_empty_position;
+    var game_result;
+    var game_box = document.getElementsByClassName("box")
+    var first_moved_position = "no move";
+    var second_moved_position = "no move";
+    var third_moved_position = "no move";
+    var fourth_moved_position = "no move";
+    var fifth_moved_position = "no move";
+    var sixth_moved_position = "no move";
+    var seventh_moved_position = "no move";
+    var eight_moved_position = "no move";
+    var ninth_moved_position = "no move";
 
 
     function check_player_turn(){
@@ -1893,7 +1894,6 @@
     function play(){
       first_move()
     }
-
 
     play()
 

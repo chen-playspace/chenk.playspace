@@ -127,7 +127,8 @@
     var game_rounds = 0;
     var current_empty_position;
     var game_result;
-    var game_box = document.getElementsByClassName("box")
+    var game_box = document.getElementsByClassName("box");
+    var main_game_container = document.getElementById("main-game-container");
     var first_moved_position = "no move";
     var second_moved_position = "no move";
     var third_moved_position = "no move";
@@ -161,7 +162,7 @@
         // window.alert("Human Win!")
         // location.reload();
         game_result = "human win"
-        victory_and_draw_display_message();
+        setTimeout(victory_and_draw_display_message,185);
         setTimeout(reload_game, 5000);
       }
       else if( (game_array[0] == "O" && game_array[1] == "O" && game_array[2] == "O") || 
@@ -175,7 +176,7 @@
         // window.alert("Ai Win!")
         // location.reload();
         game_result = "ai win"
-        victory_and_draw_display_message();
+        setTimeout(victory_and_draw_display_message,185);
         setTimeout(reload_game, 5000);
       }
     }
@@ -194,7 +195,7 @@
         // window.alert("Draw")
         // location.reload();
         game_result = "draw"
-        victory_and_draw_display_message();
+        setTimeout(victory_and_draw_display_message,185);
         setTimeout(reload_game, 5000);
       }
     }
@@ -204,12 +205,15 @@
       const message_display = document.getElementById("message-display-container")
 
       if(game_result == "human win"){
+        main_game_container.style.display = "none"                                        //To remove gameboard when game over
         message_display.innerHTML = "Congratulations, Human victory"            
       }
       else if(game_result == "ai win"){
+        main_game_container.style.display = "none"                                        //To remove gameboard when game over
         message_display.innerHTML = "Artificial Intelligence victory.<br/> Hire it's creator!" 
       }
       else if(game_result == "draw"){
+        main_game_container.style.display = "none"                                        //To remove gameboard when game over
         message_display.innerHTML = "Draw.<br/> If you can't beat me, Hire Me!"             
       }
       message_display.style.display = "block"
